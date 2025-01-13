@@ -36,20 +36,24 @@ Adding a number between `1-12` tells the class how many columns to span:
 </div>
 <div class="col-xxl-3">
   <div>Sidebar</div>
-</div>```
+</div>
+```
 
 #### Two Columns
-```<div class="flexgrid-nm">
+```html
+<div class="flexgrid-nm">
   <div class="col-xxl-6 col-md-6">
     <div>Content</div>
   </div>
   <div class="col-xxl-6 col-md-6">
     <div>Content</div>
   </div>
-</div>```
+</div>
+```
 
 #### Three Columns
-```<div class="flexgrid-nm">
+```html
+<div class="flexgrid-nm">
   <div class="col-xxl-4 col-md-4">
     <div>Content</div>
   </div>
@@ -59,10 +63,12 @@ Adding a number between `1-12` tells the class how many columns to span:
   <div class="col-xxl-4 col-md-4">
     <div>Content</div>
   </div>
-</div>```
+</div>
+```
 
 #### Four Columns
-```<div class="flexgrid-nm">
+```html
+<div class="flexgrid-nm">
   <div class="col-xxl-3 col-md-6">
     <div>Content</div>
   </div>
@@ -75,5 +81,6 @@ Adding a number between `1-12` tells the class how many columns to span:
   <div class="col-xxl-3 col-md-6">
     <div>Content</div>
   </div>
-</div>```
+</div>
+```
 
