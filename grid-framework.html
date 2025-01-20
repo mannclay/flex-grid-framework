@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="assets/css/main.css">
+  </head>
+<body>
+
+<div class="flexgrid">
+  <div class="col-xxl-12">
+    <h1>Grid Layout Framework</h1>
+    <p>For use with repeated column, row content with similar widths. (CTAs, Links with Icons...etc)</p>
+    <p>The grid-layout() mixin takes a column count, row gap and column gap as variables. See usage below:</p>
+    <p><code>.grid-container { @include grid-layout(12, 1rem, 2rem); }</code></p>
+    <p>The $row-gap will automagically be the same as $col-gap if you leave it empty.</p>
+    <p><code>.grid-item { @include grid-col-start(2); @include grid-col-span(4); @include grid-row-start(1); }</code></p>
+    <p>You can inspect the code used in example below to see usage.</p>
+  </div>
+</div>
+
+<div class="flexgrid">
+  <div class="col-xxl-12">
+    <div class="grid-container">
+      <div class="grid-item-1"><div>Content</div></div>
+      <div class="grid-item-2"><div>Content</div></div>
+      <div class="grid-item-3"><div>Content</div></div>
+      <div class="grid-item-4"><div>Content</div></div>
+      <div class="grid-item-5"><div>Content</div></div>
+      <div class="grid-item-6"><div>Content</div></div>
+      <div class="grid-item-7"><div>Content</div></div>
+      <div class="grid-item-8"><div>Content</div></div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,17 @@
+{
+  "devDependencies": {
+    "breakpoint-sass": "^3.0.0",
+    "node-sass": "^9.0.0",
+    "sass": "^1.77.8"
+  },
+  "name": "grid-layout-framework",
+  "version": "1.0.0",
+  "description": "Flexgrid Layout Framework",
+  "main": "index.html",
+  "scripts": {
+    "sass-dev": "sass --watch --update --style=expanded assets/scss:assets/css",
+    "sass-prod": "sass --no-source-map --style=compressed assets/scss:assets/css"
+  },
+  "author": "",
+  "license": "ISC"
+}

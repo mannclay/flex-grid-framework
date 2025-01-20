@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="assets/css/main.css">
+  </head>
+<body>
+
+<div class="flexgrid">
+  <div class="col-xxl-12">
+    <h1>Flexgrid Layout Framework</h1>
+    <p>The .flexgrid class functions as a container for flex items. It also plays two roles: .container and .row classes as used in Bootstrap. You can also nest containers. To do so, use .flexgrid-nm which removes the margin used for a parent container i.e., (wrapper for main-content and sidebars)</p>
+    <p><strong>Our grid system has five default breakpoints based on a twelve columns:</strong></p>
+    <ul>
+      <li>Extra extra large (col-xxl-)</li>
+      <li>Extra large (col-xl-)</li>
+      <li>Large (col-l-)</li>
+      <li>Medium (col-md-)</li>
+      <li>Small (col-sm-)</li>
+    </ul>
+    <p><strong>Breakpoints, gutters, margins are all customizable in the variables scss file.</strong></p>
+    <p><strong>Adding a number between 1-12 tells the class how many columns to span:</strong></p>
+    <ul>
+      <li>(col-xxl-9) nine columns</li>
+      <li>(col-l-6) six columns</li>
+      <li>(col-md-2) one column</li>
+    </ul>
+  </div>
+
+  <div class="col-xxl-9">
+    <div>Main Content</div>
+  </div>
+  <div class="col-xxl-3">
+    <div>Sidebar</div>
+  </div>
+
+  <div class="flexgrid-nm">
+    <div class="col-xxl-6 col-md-6"><div>Content</div></div>
+    <div class="col-xxl-6 col-md-6"><div>Content</div></div>
+  </div>
+  <div class="flexgrid-nm">
+    <div class="col-xxl-4 col-md-4"><div>Content</div></div>
+    <div class="col-xxl-4 col-md-4"><div>Content</div></div>
+    <div class="col-xxl-4 col-md-4"><div>Content</div></div>
+  </div>
+  <div class="flexgrid-nm">
+    <div class="col-xxl-3 col-md-6"><div>Content</div></div>
+    <div class="col-xxl-3 col-md-6"><div>Content</div></div>
+    <div class="col-xxl-3 col-md-6"><div>Content</div></div>
+    <div class="col-xxl-3 col-md-6"><div>Content</div></div>
+  </div>
+
+  <div class="col-xxl-12">
+    <p><strong>We also have a class which will shift right a flex item based on the number of grids added to the classname:</strong></p>
+    <ul>
+      <li>(col-xxl-8 col-xxl-shift-4) span eight columns, shift four columns</li>
+      <li>(col-xxl-6 col-xxl-shift-6) span six columns, shift six columns</li>
+      <li>(col-xxl-3 col-xxl-shift-9) span three columns, shift nine column</li>
+    </ul>
+  </div>
+  <div class="flexgrid-nm">
+    <div class="col-xxl-8 col-xxl-shift-4"><div>Content</div></div>
+    <div class="col-xxl-6 col-xxl-shift-6"><div>Content</div></div>
+    <div class="col-xxl-3 col-xxl-shift-9"><div>Content</div></div>
+  </div>
+</div>
+
+</body>
+</html>

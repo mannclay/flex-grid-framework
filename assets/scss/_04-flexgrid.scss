@@ -1,0 +1,53 @@
+// Flexgrid classes
+.flexgrid {
+  @include grid-base($xxl-grid-width);
+
+  width: calc(100% - ($grid-sm-margin * 2));
+
+  @media screen and (min-width: $grid-md-breakpoint) {
+    width: calc(100% - ($grid-md-margin * 2));
+  }
+
+  @media screen and (min-width: $grid-l-breakpoint) {
+    width: calc(100% - ($grid-l-margin * 2));
+  }
+
+  @media screen and (min-width: $grid-xl-breakpoint) {
+    width: calc(100% - ($grid-xl-margin * 2));
+  }
+
+  @media screen and (min-width: $grid-xxl-breakpoint) {
+    width: calc(100% - ($grid-xxl-margin * 2));
+  }
+
+  // Used to remove margins
+  &-nm {
+    @include grid-base(100%);
+  }
+}
+
+.col {
+  @media screen and (min-width: $small) {
+    @include columns-loop(xxl, $grid-xxl-columns, $xxl-gutter);
+
+    @media screen and (max-width: $grid-xl-breakpoint) {
+      @include columns-loop(xl, $grid-xl-columns, $xl-gutter);
+    }
+
+    @media screen and (max-width: $grid-l-breakpoint) {
+      @include columns-loop(l, $grid-l-columns, $l-gutter);
+    }
+
+    @media screen and (max-width: $grid-md-breakpoint) {
+      @include columns-loop(md, $grid-md-columns, $md-gutter);
+    }
+
+    @media screen and (max-width: $grid-sm-breakpoint) {
+      @include columns-loop(sm, $grid-sm-columns, $sm-gutter);
+    }
+  }
+}
+
+[class*='col-'] {
+  @include margin;
+}
